@@ -2,12 +2,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import imageUrls from '@/constants/imageUrls';
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Header imageUrl="/thumb-1920-899920.jpg" title="Spiderman Suits" subtitle="Explore the iconic Spiderman suits with detailed information and features." />
+      <Header imageUrl={imageUrls.homemadeSuit} title="Spiderman Suits" subtitle="Explore the iconic Spiderman suits with detailed information and features." />
       <main className="flex-grow bg-gradient-to-br from-black to-gray-800 text-white flex flex-col items-center justify-center p-4">
         <div className="text-center max-w-4xl w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
